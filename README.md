@@ -3,19 +3,26 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2504.02168-b31b1b.svg)](https://arxiv.org/abs/2504.02168)
 [![Conference](https://img.shields.io/badge/CVPR-2025-blue.svg)](https://cvpr.thecvf.com/virtual/2025/poster/33891)
 [![Website](https://img.shields.io/badge/Website-MDP-blueviolet)](https://mdp-cvpr.github.io/)
+[![Tutorial](https://img.shields.io/badge/Tutorial-CVPR-brightgreen.svg)](https://youtu.be/ktBT_SkrYHU)
+
 <!-- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) -->
+
 This repository contains the official implementation of MDP method introduced in our CVPR 2025 paper:
 
 > **MDP: Multidimensional Vision Model Pruning with Latency Constraint**  
 > Xinglong Sun, Barath Lakshmanan, Maying Shen, Shiyi Lan, Jingde Chen, Jose M. Alvarez
 
 ## 📋 Table of Contents
-- [Introduction](#introduction)
-- [Framework](#framework)
-- [Results](#results)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Citation](#citation)
+- [News](#-news)
+- [Introduction](#-introduction)
+- [Framework](#-framework)
+- [Results](#-results)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Citation](#-citation)
+
+## 📢 News
+- [2025/06] I presented MDP in a [CVPR 2025 tutorial](https://cvpr.thecvf.com/virtual/2025/tutorial/35921) on Full-Stack, GPU-based Acceleration of Deep Learning and Foundation Models. You can watch the [tutorial video here](https://youtu.be/ktBT_SkrYHU)!
 
 ## 📝 Introduction
 
