@@ -2,9 +2,8 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2504.02168-b31b1b.svg)](https://arxiv.org/abs/2504.02168)
 [![Conference](https://img.shields.io/badge/CVPR-2025-blue.svg)](https://cvpr.thecvf.com/virtual/2025/poster/33891)
-<!-- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) -->
 [![Website](https://img.shields.io/badge/Website-MDP-blueviolet)](https://mdp-cvpr.github.io/)
-
+<!-- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) -->
 This repository contains the official implementation of MDP method introduced in our CVPR 2025 paper:
 
 > **MDP: Multidimensional Vision Model Pruning with Latency Constraint**  
