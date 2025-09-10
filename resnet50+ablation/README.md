@@ -53,7 +53,7 @@ conda install -c conda-forge ipopt
 Download the baseline ResNet50 model from [Google Drive](https://drive.google.com/file/d/1umlp0kUcRDBy1fABKHyU5zn2j3CvYb3L/view?usp=drive_link) and note the local path.
 
 **Latency Lookup Tables (LUTs)**
-Download the latency LUTs from [Google Drive](https://drive.google.com/file/d/1kd5MhxshRz6HCdizCLzTCAQoRrEX2W5v/view?usp=drive_link) and note the local path.
+Download the latency LUTs from [Google Drive](https://drive.google.com/file/d/1kd5MhxshRz6HCdizCLzTCAQoRrEX2W5v/view?usp=drive_link) and note the local path. Concretely, this LUT is pre-recorded on a Titan-V GPU.
 
 **ImageNet Dataset**
 Download [ImageNet1K](https://image-net.org/download.php) and extract it to your desired location.
@@ -202,3 +202,5 @@ python3 est_inference.py \
 ```
 
 > 💡 **Tip**: The mask file location will be printed during the pruning process, or you can find it in your specified output directory.
+
+> 💡 **Tip**: Since the provided LUT is generated on a TITAN V, it specifically targets latency reduction on that GPU. If you use our latency lookup table, we recommend measuring your pruned model’s latency on a TITAN V. For other hardware, you can generate your own LUT and evaluate the corresponding speedup.
