@@ -1,2 +1,0 @@
-#export PATH=$PATH:~/dev/ngc-cli
-ngc batch run --name "alex-nuscenes" --preempt RUNONCE --ace nv-us-west-2 --instance dgx1v.32g.8.norm --commandline "jupyter lab --ip=0.0.0.0 --allow-root --no-browser --NotebookApp.token='' --notebook-dir=/ --NotebookApp.allow_origin='*' & date; sleep 7d" --result /result --image "nvcr.io/nvidian/swaiinf/pytorchv1_py3:2.0" --org nvidian --team swaiinf --datasetid 1605492:/workspace/data --workspace ilihhusDSbuPXeySxJMEnQ:/workspace/alex:RW --port 8888 --port 6006 --label ml___resnet50 --label _wl___computer_vision
