@@ -1,0 +1,44 @@
+{
+    "reg_groups": [
+      {
+        "reg_type": "GS_SPARSE",
+        "layers": [
+          {
+            "layer_name": "module.features.conv1-1, module.features.conv1-2",
+            "bn_name": "",
+            "gate_name": "",
+            "pre_conv": ", module.features.conv1-1",
+            "aft_conv": "module.features.conv1-2, module.features.conv2-1"
+          },
+          {
+            "layer_name": "module.features.conv2-1, module.features.conv2-2",
+            "bn_name": "",
+            "gate_name": "",
+            "pre_conv": "module.features.conv1-2, module.features.conv2-1",
+            "aft_conv": "module.features.conv2-2, module.features.conv3-1"
+          },
+          {
+            "layer_name": "module.features.conv3-1, module.features.conv3-2, module.features.conv3-3",
+            "bn_name": "",
+            "gate_name": "",
+            "pre_conv": "module.features.conv2-2, module.features.conv3-1, module.features.conv3-2",
+            "aft_conv": "module.features.conv3-2, module.features.conv3-3, module.features.conv4-1"
+          },
+          {
+            "layer_name": "module.features.conv4-1, module.features.conv4-2, module.features.conv4-3, module.features.conv5-1, module.features.conv5-2",
+            "bn_name": "",
+            "gate_name": "",
+            "pre_conv": "module.features.conv3-3, module.features.conv4-1, module.features.conv4-2, module.features.conv4-3, module.features.conv5-1",
+            "aft_conv": "module.features.conv4-2, module.features.conv4-3, module.features.conv5-1, module.features.conv5-2, module.features.conv5-3"
+          },
+          {
+            "layer_name": "module.features.conv5-3",
+            "bn_name": "",
+            "gate_name": "",
+            "pre_conv": "module.features.conv5-2",
+            "aft_conv": ""
+          }
+        ]
+      }
+    ]
+  }

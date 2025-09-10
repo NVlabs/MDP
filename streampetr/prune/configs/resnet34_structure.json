@@ -1,0 +1,66 @@
+{
+  "reg_groups": [
+    {
+      "reg_type": "GS_SPARSE",
+      "layers": [
+        {
+          "layer_name": "module.layer1.0.conv1, module.layer1.1.conv1, module.layer1.2.conv1",
+          "bn_name": "module.layer1.0.bn1, module.layer1.1.bn1, module.layer1.2.bn1",
+          "gate_name": "module.layer1.0.gate1, module.layer1.1.gate1, module.layer1.2.gate1",
+          "pre_conv": "module.conv1, module.layer1.0.conv2, module.layer1.1.conv2",
+          "aft_conv": "module.layer1.0.conv2, module.layer1.1.conv2, module.layer1.2.conv2"
+        },
+        {
+          "layer_name": "module.layer2.0.conv1, module.layer2.1.conv1, module.layer2.2.conv1, module.layer2.3.conv1",
+          "bn_name": "module.layer2.0.bn1, module.layer2.1.bn1, module.layer2.2.bn1, module.layer2.3.bn1",
+          "gate_name": "module.layer2.0.gate1, module.layer2.1.gate1, module.layer2.2.gate1, module.layer2.3.gate1",
+          "pre_conv": "module.layer1.2.conv2, module.layer2.0.conv2, module.layer2.1.conv2, module.layer2.2.conv2",
+          "aft_conv": "module.layer2.0.conv2, module.layer2.1.conv2, module.layer2.2.conv2, module.layer2.3.conv2"
+        },
+        {
+          "layer_name": "module.layer3.0.conv1, module.layer3.1.conv1, module.layer3.2.conv1, module.layer3.3.conv1, module.layer3.4.conv1, module.layer3.5.conv1",
+          "bn_name": "module.layer3.0.bn1, module.layer3.1.bn1, module.layer3.2.bn1, module.layer3.3.bn1, module.layer3.4.bn1, module.layer3.5.bn1",
+          "gate_name": "module.layer3.0.gate1, module.layer3.1.gate1, module.layer3.2.gate1, module.layer3.3.gate1, module.layer3.4.gate1, module.layer3.5.gate1",
+          "pre_conv": "module.layer2.3.conv2, module.layer3.0.conv2, module.layer3.1.conv2, module.layer3.2.conv2, module.layer3.3.conv2, module.layer3.4.conv2",
+          "aft_conv": "module.layer3.0.conv2, module.layer3.1.conv2, module.layer3.2.conv2, module.layer3.3.conv2, module.layer3.4.conv2, module.layer3.5.conv2"
+        },
+        {
+          "layer_name": "module.layer4.0.conv1, module.layer4.1.conv1, module.layer4.2.conv1",
+          "bn_name": "module.layer4.0.bn1, module.layer4.1.bn1, module.layer4.2.bn1",
+          "gate_name": "module.layer4.0.gate1, module.layer4.1.gate1, module.layer4.2.gate1",
+          "pre_conv": "module.layer3.5.conv2, module.layer4.0.conv2, module.layer4.1.conv2",
+          "aft_conv": "module.layer4.0.conv2, module.layer4.1.conv2, module.layer4.2.conv2"
+        }
+      ]
+    },
+    {
+      "reg_type": "CL_GROUP",
+      "layers": [
+        {"layer_name": "module.conv1, module.layer1.0.conv2, module.layer1.1.conv2, module.layer1.2.conv2",
+          "bn_name": "module.bn1, module.layer1.0.bn2, module.layer1.1.bn2, module.layer1.2.bn2",
+          "gate_name": "module.gate_skip64",
+          "pre_conv": ", module.layer1.0.conv1, module.layer1.1.conv1, module.layer1.2.conv1",
+          "aft_conv": "module.layer1.0.conv1, module.layer1.1.conv1, module.layer1.2.conv1, module.layer2.0.conv1"
+        },
+        {"layer_name": "module.layer2.0.downsample.0, module.layer2.0.conv2, module.layer2.1.conv2, module.layer2.2.conv2, module.layer2.3.conv2",
+          "bn_name": "module.layer2.0.downsample.1, module.layer2.0.bn2, module.layer2.1.bn2, module.layer2.2.bn2, module.layer2.3.bn2",
+          "gate_name": "module.gate_skip128",
+          "pre_conv": "module.layer1.2.conv2, module.layer2.0.conv1, module.layer2.1.conv1, module.layer2.2.conv1, module.layer2.3.conv1",
+          "aft_conv": "module.layer2.1.conv1, module.layer2.2.conv1, module.layer2.3.conv1, module.layer3.0.conv1"
+        },
+        {"layer_name": "module.layer3.0.downsample.0, module.layer3.0.conv2, module.layer3.1.conv2, module.layer3.2.conv2, module.layer3.3.conv2, module.layer3.4.conv2, module.layer3.5.conv2",
+          "bn_name": "module.layer3.0.downsample.1, module.layer3.0.bn2, module.layer3.1.bn2, module.layer3.2.bn2, module.layer3.3.bn2, module.layer3.4.bn2, module.layer3.5.bn2",
+          "gate_name": "module.gate_skip256",
+          "pre_conv": "module.layer2.3.conv2, module.layer3.0.conv1, module.layer3.1.conv1, module.layer3.2.conv1, module.layer3.3.conv1, module.layer3.4.conv1, module.layer3.5.conv1",
+          "aft_conv": "module.layer3.1.conv1, module.layer3.2.conv1, module.layer3.3.conv1, module.layer3.4.conv1, module.layer3.5.conv1, module.layer4.0.conv1"
+        },
+        {"layer_name": "module.layer4.0.downsample.0, module.layer4.0.conv2, module.layer4.1.conv2, module.layer4.2.conv2",
+          "bn_name": "module.layer4.0.downsample.1, module.layer4.0.bn2, module.layer4.1.bn2, module.layer4.2.bn2",
+          "gate_name": "module.gate_skip512",
+          "pre_conv": "module.layer3.5.conv2, module.layer4.0.conv1, module.layer4.1.conv1, module.layer4.2.conv1",
+          "aft_conv": "module.layer4.1.conv1, module.layer4.2.conv1"
+        }
+      ]
+    }
+  ]
+}

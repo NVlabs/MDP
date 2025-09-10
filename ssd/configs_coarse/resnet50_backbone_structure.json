@@ -1,0 +1,61 @@
+{
+    "reg_groups": [
+      {
+        "reg_type": "GS_SPARSE",
+        "layers": [
+          {
+            "layer_name": "module.f_0.conv1",
+            "bn_name": "module.f_0.bn1",
+            "gate_name": "module.f_0.gate1",
+            "pre_conv": "",
+            "aft_conv": "module.f_0.layer1.0.conv1, module.f_0.layer1.0.downsample.0"
+          },
+          {
+            "layer_name": "module.f_0.layer1.0.conv1, module.f_0.layer1.0.conv2, module.f_0.layer1.1.conv1, module.f_0.layer1.1.conv2, module.f_0.layer1.2.conv1, module.f_0.layer1.2.conv2",
+            "bn_name": "module.f_0.layer1.0.bn1, module.f_0.layer1.0.bn2, module.f_0.layer1.1.bn1, module.f_0.layer1.1.bn2, module.f_0.layer1.2.bn1, module.f_0.layer1.2.bn2",
+            "gate_name": "module.f_0.layer1.0.gate1, module.f_0.layer1.0.gate2, module.f_0.layer1.1.gate1, module.f_0.layer1.1.gate2, module.f_0.layer1.2.gate1, module.f_0.layer1.2.gate2",
+            "pre_conv": "module.f_0.conv1, module.f_0.layer1.0.conv1, module.f_0.layer1.0.conv3, module.f_0.layer1.1.conv1, module.f_0.layer1.1.conv3, module.f_0.layer1.2.conv1",
+            "aft_conv": "module.f_0.layer1.0.conv2, module.f_0.layer1.0.conv3, module.f_0.layer1.1.conv2, module.f_0.layer1.1.conv3, module.f_0.layer1.2.conv2, module.f_0.layer1.2.conv3"
+          },
+          {
+            "layer_name": "module.f_0.layer2.0.conv1, module.f_0.layer2.0.conv2, module.f_0.layer2.1.conv1, module.f_0.layer2.1.conv2, module.f_0.layer2.2.conv1, module.f_0.layer2.2.conv2, module.f_0.layer2.3.conv1, module.f_0.layer2.3.conv2",
+            "bn_name": "module.f_0.layer2.0.bn1, module.f_0.layer2.0.bn2, module.f_0.layer2.1.bn1, module.f_0.layer2.1.bn2, module.f_0.layer2.2.bn1, module.f_0.layer2.2.bn2, module.f_0.layer2.3.bn1, module.f_0.layer2.3.bn2",
+            "gate_name": "module.f_0.layer2.0.gate1, module.f_0.layer2.0.gate2, module.f_0.layer2.1.gate1, module.f_0.layer2.1.gate2, module.f_0.layer2.2.gate1, module.f_0.layer2.2.gate2, module.f_0.layer2.3.gate1, module.f_0.layer2.3.gate2",
+            "pre_conv": "module.f_0.layer1.2.conv3, module.f_0.layer2.0.conv1, module.f_0.layer2.0.conv3, module.f_0.layer2.1.conv1, module.f_0.layer2.1.conv3, module.f_0.layer2.2.conv1, module.f_0.layer2.2.conv3, module.f_0.layer2.3.conv1",
+            "aft_conv": "module.f_0.layer2.0.conv2, module.f_0.layer2.0.conv3, module.f_0.layer2.1.conv2, module.f_0.layer2.1.conv3, module.f_0.layer2.2.conv2, module.f_0.layer2.2.conv3, module.f_0.layer2.3.conv2, module.f_0.layer2.3.conv3"
+          },
+          {
+            "layer_name": "module.f_0.layer3.0.conv1, module.f_0.layer3.0.conv2, module.f_0.layer3.1.conv1, module.f_0.layer3.1.conv2, module.f_0.layer3.2.conv1, module.f_0.layer3.2.conv2, module.f_0.layer3.3.conv1, module.f_0.layer3.3.conv2, module.f_0.layer3.4.conv1, module.f_0.layer3.4.conv2, module.f_0.layer3.5.conv1, module.f_0.layer3.5.conv2",
+            "bn_name": "module.f_0.layer3.0.bn1, module.f_0.layer3.0.bn2, module.f_0.layer3.1.bn1, module.f_0.layer3.1.bn2, module.f_0.layer3.2.bn1, module.f_0.layer3.2.bn2, module.f_0.layer3.3.bn1, module.f_0.layer3.3.bn2, module.f_0.layer3.4.bn1, module.f_0.layer3.4.bn2, module.f_0.layer3.5.bn1, module.f_0.layer3.5.bn2",
+            "gate_name": "module.f_0.layer3.0.gate1, module.f_0.layer3.0.gate2, module.f_0.layer3.1.gate1, module.f_0.layer3.1.gate2, module.f_0.layer3.2.gate1, module.f_0.layer3.2.gate2, module.f_0.layer3.3.gate1, module.f_0.layer3.3.gate2, module.f_0.layer3.4.gate1, module.f_0.layer3.4.gate2, module.f_0.layer3.5.gate1, module.f_0.layer3.5.gate2",
+            "pre_conv": "module.f_0.layer2.3.conv3, module.f_0.layer3.0.conv1, module.f_0.layer3.0.conv3, module.f_0.layer3.1.conv1, module.f_0.layer3.1.conv3, module.f_0.layer3.2.conv1, module.f_0.layer3.2.conv3, module.f_0.layer3.3.conv1, module.f_0.layer3.3.conv3, module.f_0.layer3.4.conv1, module.f_0.layer3.4.conv3, module.f_0.layer3.5.conv1",
+            "aft_conv": "module.f_0.layer3.0.conv2, module.f_0.layer3.0.conv3, module.f_0.layer3.1.conv2, module.f_0.layer3.1.conv3, module.f_0.layer3.2.conv2, module.f_0.layer3.2.conv3, module.f_0.layer3.3.conv2, module.f_0.layer3.3.conv3, module.f_0.layer3.4.conv2, module.f_0.layer3.4.conv3, module.f_0.layer3.5.conv2, module.f_0.layer3.5.conv3"
+          }
+        ]
+      },
+      {
+        "reg_type": "CL_GROUP",
+        "layers": [
+          {"layer_name": "module.f_0.layer1.0.downsample.0, module.f_0.layer1.0.conv3, module.f_0.layer1.1.conv3, module.f_0.layer1.2.conv3",
+            "bn_name": "module.f_0.layer1.0.downsample.1, module.f_0.layer1.0.bn3, module.f_0.layer1.1.bn3, module.f_0.layer1.2.bn3",
+            "gate_name": "module.f_0.gate_skip64",
+            "pre_conv": "module.f_0.conv1, module.f_0.layer1.0.conv2, module.f_0.layer1.1.conv2, module.f_0.layer1.2.conv2",
+            "aft_conv": "module.f_0.layer2.0.downsample.0, module.f_0.layer1.1.conv1, module.f_0.layer1.2.conv1, module.f_0.layer2.0.conv1"
+          },
+          {"layer_name": "module.f_0.layer2.0.downsample.0, module.f_0.layer2.0.conv3, module.f_0.layer2.1.conv3, module.f_0.layer2.2.conv3, module.f_0.layer2.3.conv3",
+            "bn_name": "module.f_0.layer2.0.downsample.1, module.f_0.layer2.0.bn3, module.f_0.layer2.1.bn3, module.f_0.layer2.2.bn3, module.f_0.layer2.3.bn3",
+            "gate_name": "module.f_0.gate_skip128",
+            "pre_conv": "module.f_0.layer1.0.downsample.0, module.f_0.layer2.0.conv2, module.f_0.layer2.1.conv2, module.f_0.layer2.2.conv2, module.f_0.layer2.3.conv2",
+            "aft_conv": "module.f_0.layer3.0.downsample.0, module.f_0.layer2.1.conv1, module.f_0.layer2.2.conv1, module.f_0.layer2.3.conv1, module.f_0.layer3.0.conv1"
+          },
+          {"layer_name": "module.f_0.layer3.0.downsample.0, module.f_0.layer3.0.conv3, module.f_0.layer3.1.conv3, module.f_0.layer3.2.conv3, module.f_0.layer3.3.conv3, module.f_0.layer3.4.conv3, module.f_0.layer3.5.conv3",
+            "bn_name": "module.f_0.layer3.0.downsample.1, module.f_0.layer3.0.bn3, module.f_0.layer3.1.bn3, module.f_0.layer3.2.bn3, module.f_0.layer3.3.bn3, module.f_0.layer3.4.bn3, module.f_0.layer3.5.bn3",
+            "gate_name": "module.f_0.gate_skip256",
+            "pre_conv": "module.f_0.layer2.0.downsample.0, module.f_0.layer3.0.conv2, module.f_0.layer3.1.conv2, module.f_0.layer3.2.conv2, module.f_0.layer3.3.conv2, module.f_0.layer3.4.conv2, module.f_0.layer3.5.conv2",
+            "aft_conv": "module.f_0.layer3.1.conv1, module.f_0.layer3.2.conv1, module.f_0.layer3.3.conv1, module.f_0.layer3.4.conv1, module.f_0.layer3.5.conv1, "
+          }
+        ]
+      }
+    ]
+  }
+  

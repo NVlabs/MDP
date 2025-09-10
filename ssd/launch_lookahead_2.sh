@@ -1,0 +1,1 @@
+python train.py --data-dir /raid/json_path/ --prune-start 200 --prune-end 300 --method 26 --reg-conf configs_coarse/resnet50_backbone.json --arch resnet50 --coarse-pruning --epochs 1000 --model ssd512 --batch-size 128 -m 26 --prune-ratio 0.79 --backbone-only --output-dir /result

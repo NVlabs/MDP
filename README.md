@@ -13,15 +13,21 @@ This repository contains the official implementation of MDP method introduced in
 > Xinglong Sun, Barath Lakshmanan, Maying Shen, Shiyi Lan, Jingde Chen, Jose M. Alvarez
 
 ## 📋 Table of Contents
+- [License](#-license)
 - [News](#-news)
 - [Introduction](#-introduction)
 - [Framework](#-framework)
 - [Results](#-results)
 - [Installation](#-installation)
 - [Usage](#-usage)
+- [Acknowledgements](#-acknowledgements)
 - [Citation](#-citation)
 
+## 📄 License
+Please check the LICENSE file. HALP may be used non-commercially, meaning for research or evaluation purposes only. For business inquiries, please contact researchinquiries@nvidia.com.
+
 ## 📢 News
+- [2025/09] Release license obtained. ResNet50 and ablation study code are now available; remaining code will be cleaned up and released soon.
 - [2025/06] I presented MDP in a [CVPR 2025 tutorial](https://cvpr.thecvf.com/virtual/2025/tutorial/35921) on Full-Stack, GPU-based Acceleration of Deep Learning and Foundation Models. You can watch the [tutorial video here](https://youtu.be/ktBT_SkrYHU)!
 
 ## 📝 Introduction
@@ -61,11 +67,15 @@ Our extensive experiments demonstrate MDP's superior performance:
 
 ## 🚀 Installation
 
-*Code coming soon!*
+Please check README within the folder for the task you want to run!
 
 ## 💻 Usage
 
-*Code coming soon!*
+Please check README within the folder for the task you want to run!
+
+## 🙏 Acknowledgements
+
+Some of the infrastructure, data loading, and foundational code are adapted from [HALP](https://arxiv.org/abs/2210.06659) and [NVIT](https://arxiv.org/abs/2110.04869) works. We sincerely thank the authors of these works for their contributions.
 
 ## 📚 Citation
 

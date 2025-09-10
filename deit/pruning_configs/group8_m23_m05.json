@@ -1,0 +1,23 @@
+{
+  "method": 23,
+  "frequency" : 100,
+  "prune_per_iteration" : 256,
+  "maximum_pruning_iterations" : 192,
+  "starting_neuron" : 0,
+  "fixed_layer" : -1,
+  "l2_normalization_per_layer": false,
+  "rank_neurons_equally": false,
+  "prune_neurons_max": 49152,
+  "use_momentum": false,
+  "pruning_silent": false,
+  "group_size": 8,
+
+  "pruning_threshold" : 1000000.0,
+  "start_pruning_after_n_iterations" : 0,
+  "push_group_down" : false,
+  "do_iterative_pruning" : true,
+  "fixed_criteria" : false,
+  "seed" : 0,
+  "pruning_momentum" : 0.5
+}
+

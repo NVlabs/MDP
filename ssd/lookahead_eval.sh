@@ -1,0 +1,1 @@
+python eval.py --data-dir /raid -a resnet50 --print-stats -s 870 -e 899 --checkpoint-dir /result/2022-11-09_14-12-09
