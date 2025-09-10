@@ -1,16 +1,16 @@
-## GTRS OSS Contribution Rules
+## MDP OSS Contribution Rules
 
 #### Pull Requests
 
 Developer workflow for code contributions is as follows:
 
 1. Developers must first [fork](https://help.github.com/en/articles/fork-a-repo)
-   the [upstream](https://github.com/NVlabs/GTRS) GTRS OSS repository.
+   the [upstream](https://github.com/NVlabs/MDP) MDP OSS repository.
 
 2. Git clone the forked repository and push changes to the personal fork.
 
   ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_FORK.git GTRS
+git clone https://github.com/YOUR_USERNAME/YOUR_FORK.git MDP
 # Checkout the targeted branch and commit changes
 # Push the commits to a branch on the fork (remote).
 git push -u origin <local-branch>:<remote-branch>
